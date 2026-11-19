@@ -1,0 +1,26 @@
+:root {
+    --bs-primary-bg: #963f2f;
+    --bs-primary-fg: #963f2f;
+    --bs-primary-fg-emphasis: #763025;
+    --bs-primary-border: #963f2f;
+    --bs-primary-focus-ring: #963f2f;
+    --bs-primary-contrast: #ffffff;
+}
+.btn-solid.theme-primary {
+    --bs-theme-bg: #963f2f;
+    --bs-theme-border: #963f2f;
+    --bs-theme-contrast: #ffffff;
+}
+body {
+    background-color: #f7f0e2;
+    color: #352820;
+}
+.site-navbar, .site-footer {
+    background-color: #bbc9cc;
+}
+.site-navbar .navbar-brand, .site-navbar .nav-link {
+    color: #352820;
+}
+.card {
+    --bs-card-bg: #fffbf4;
+}
