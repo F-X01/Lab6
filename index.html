@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Reminiscence</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar md:navbar-expand site-navbar" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Italian Reminiscence</a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#site-menu" aria-controls="site-menu" aria-label="Open menu">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog class="drawer drawer-end" id="site-menu" aria-labelledby="menu-title">
+                    <div class="drawer-header">
+                        <span class="drawer-title" id="menu-title">Menu</span>
+                        <button class="btn-close" type="button" data-bs-dismiss="drawer"
+                            aria-label="Close menu"></button>
+                    </div>
+                    <div class="drawer-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#places">Places</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-4">
+        <h1>Italian Reminiscence</h1>
+
+        <section class="carousel carousel-overlay" id="italy-carousel" aria-label="Featured travel photos">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/siena-wide.jpg" alt="Terracotta rooftops in Siena">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/venice-wide.jpg" alt="Buildings along a canal in Venice">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/rome-wide.jpg" alt="A street in Rome">
+                </div>
+            </div>
+            <div class="carousel-overlay-controls">
+                <button class="btn-solid theme-primary" type="button"
+                    data-bs-target="#italy-carousel" data-bs-slide="prev">Previous</button>
+                <button class="btn-solid theme-primary" type="button"
+                    data-bs-target="#italy-carousel" data-bs-slide="next">Next</button>
+            </div>
+        </section>
+
+        <section class="mt-4" id="places" aria-labelledby="places-heading">
+            <h2 id="places-heading">More Places</h2>
+            <div class="row g-4">
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/siena.jpg" alt="Terracotta rooftops in Siena">
+                        <div class="card-body">
+                            <h3 class="card-title">Siena</h3>
+                            <p>Siena was my home base during the summer program.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Piazza del Campo is a good place to start exploring the old town.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#siena-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="siena-memory" aria-labelledby="siena-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="siena-title">A postcard from Siena</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>After trips to other cities, coming back to Siena felt like coming home.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/venice.jpg" alt="Buildings along a canal in Venice">
+                        <div class="card-body">
+                            <h3 class="card-title">Venice</h3>
+                            <p>Venice is full of small bridges and narrow streets.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        The canals connect different parts of the city.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#venice-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="venice-memory" aria-labelledby="venice-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="venice-title">A postcard from Venice</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>One work I remember from Venice was Salvo’s <em>Rispettare le leggi</em>.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/rome.jpg" alt="A street in Rome">
+                        <div class="card-body">
+                            <h3 class="card-title">Rome</h3>
+                            <p>Rome was one of the stops on my summer trip.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        The Pantheon sits in a square in the historic centre.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#rome-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="rome-memory" aria-labelledby="rome-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="rome-title">A postcard from Rome</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>The Pantheon was one of the places I wanted to see while I was in Rome.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/naples.jpg" alt="A view of Naples">
+                        <div class="card-body">
+                            <h3 class="card-title">Naples</h3>
+                            <p>Naples was another stop on my summer trip.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Naples is on the coast in southern Italy.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#naples-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="naples-memory" aria-labelledby="naples-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="naples-title">A postcard from Naples</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>Naples reminds me how different each stop on the same trip could feel.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/pienza.jpg" alt="A street in Pienza">
+                        <div class="card-body">
+                            <h3 class="card-title">Pienza</h3>
+                            <p>Pienza reminds me of the small things I brought back from Italy.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        The town sits in the Val d’Orcia in Tuscany.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#pienza-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="pienza-memory" aria-labelledby="pienza-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="pienza-title">A postcard from Pienza</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>I picked out a plate and two cloth napkins in Pienza.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top" src="images/florence.jpg" alt="A view of Florence">
+                        <div class="card-body">
+                            <h3 class="card-title">Florence</h3>
+                            <p>Florence is known for its art and architecture.</p>
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        The dome of Florence Cathedral is a landmark in the city centre.
+                                    </div>
+                                </details>
+                            </div>
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog"
+                                data-bs-target="#florence-memory">View Memory</button>
+                        </div>
+                    </article>
+                    <dialog class="dialog" id="florence-memory" aria-labelledby="florence-title">
+                        <div class="dialog-header">
+                            <h2 class="dialog-title" id="florence-title">A postcard from Florence</h2>
+                        </div>
+                        <div class="dialog-body">
+                            <p>The cathedral dome is one detail I would look for in a postcard from Florence.</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary" type="button"
+                                data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer py-3 text-center">
+        <p class="mb-0">Italian Reminiscence</p>
+    </footer>
+</body>
+</html>
